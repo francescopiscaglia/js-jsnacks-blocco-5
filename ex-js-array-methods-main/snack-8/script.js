@@ -22,16 +22,22 @@ const students = [
 // Recupera la classe dello studente 'Marco Lanci'
 // Risultato: '3C'
 
-let classNumber;
+// let classNumber;
 
-const specificClass = students.filter(element => {
-  if (element.class === "3C") {
-    classNumber = element.class
-    return true;
-  };
-  return false;
+// const specificClass = students.filter(element => {
+//   if (element.class === "3C") {
+//     classNumber = element.class
+//     return true;
+//   };
+//   return false;
+// });
+// console.log(classNumber);
+
+const findClass = students.find(element => {
+  return element.class === "3C";
 });
-console.log(classNumber);
+
+console.log(findClass.class);
 
 
 // for loop
