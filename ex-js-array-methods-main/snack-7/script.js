@@ -21,3 +21,23 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+const foundElement = students.find(person => {
+  return person.id === 2;
+});
+
+console.log(foundElement);
+
+
+// for loop
+let find;
+
+for (let i = 0; i < students.length; i++) {
+  const singleStudent = students[i];
+
+  if (singleStudent.id === 2) {
+    find = singleStudent;
+    break;
+  };
+};
+console.log(find);
