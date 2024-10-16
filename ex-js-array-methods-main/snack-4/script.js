@@ -13,3 +13,15 @@ const postAuthor = posts.map((element) => {
 });
 
 console.log(postAuthor);
+
+
+// for loop
+let newArray = [];
+
+for (let i = 0; i < posts.length; i++) {
+  const singlePost = posts[i];
+
+  newArray.push(singlePost.author);
+};
+
+console.log(newArray);

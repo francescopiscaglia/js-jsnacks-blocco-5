@@ -11,3 +11,16 @@ const evenNumber = nums.filter((numb => {
 }));
 
 console.log(evenNumber);
+
+
+// for loop
+let evenArray = [];
+
+for (let i = 0; i < nums.length; i++) {
+    const singleNumb = nums[i];
+
+    if (singleNumb % 2 === 0) {
+        evenArray.push(singleNumb);
+    };
+};
+console.log(evenArray);
