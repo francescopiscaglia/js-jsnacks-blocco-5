@@ -34,7 +34,7 @@ const students = [
 // console.log(classNumber);
 
 const findClass = students.find(element => {
-  return element.class === "3C";
+  return element.name === "Marco Lanci";
 });
 
 console.log(findClass.class);
@@ -46,7 +46,7 @@ let number;
 for (let i = 0; i < students.length; i++) {
   const singleStudent = students[i];
 
-  if (singleStudent.class === "3C") {
+  if (singleStudent.name === "Marco Lanci") {
     number = singleStudent.class;
     break;
   };
